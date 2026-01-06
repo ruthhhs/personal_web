@@ -42,7 +42,8 @@ body {
     }
 }
 
-/* =================================================================================================== */
+/* TEXT =================== */
+
 h1, h2, h3 {
     color: #ffc6c6;
     font-weight: 800;
@@ -54,45 +55,63 @@ p {
     font-weight: 600;
 }
 
-/* =================================================================================================== */
+/* HEADER =================== */
 header {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #141414;
     padding: 10px 0;
-    box-shadow: 0 0 5px 2px #141414;
     z-index: 100;
+    height: 50px;
+
+    /* glass effect */
+    background: rgba(56, 47, 49, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    /* border-radius: 0 0 20px 20px; */
+    border: 1px solid rgba(255, 246, 250, 0.185);
+    box-shadow: 0 8px 32px 0 rgba(135, 31, 66, 0.37);
 }
 
 .container-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 50px;
 }
 
 .logo h3 {
     color: #ffc6c6;
 }
 
+/* NAVIGASI */
 .nav-head ul {
     list-style: none;
     display: flex;
     gap: 25px;
+    align-items: center;
+    transition: all 0.4s ease; 
 }
 
 .nav-head ul li a {
     color: #fff0f0;
-    transition: all 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0;
+    margin: 0 0px; 
+    border-radius: 100px;
+    transition: all 0.3s ease;
 }
 
-.nav-head ul li a:hover {
-    transform: scale(1.1);
+.nav-head ul li:hover a {
     color: #ffc6c6;
+    font-weight: 700;
+    transform: scale(1.2);
+    margin: 0 15px; 
+    filter:drop-shadow(0 0 10px rgba(228, 144, 144, 0.5));
 }
 
-/* =================================================================================================== */
+/* ICON SOSIALS */
 .socials ul {
     list-style: none;
     display: flex;
@@ -100,8 +119,8 @@ header {
 }
 
 .socials ul li img {
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
     object-fit: contain;
     transition: transform 0.2s ease, filter 0.2s ease;
 }
@@ -111,7 +130,7 @@ header {
     filter: brightness(1.3);
 }
 
-/* =================================================================================================== */
+/* CONTENT =================== */
 .container {
     margin: auto;
     min-height: 100vh;
@@ -121,7 +140,7 @@ header {
     align-items: center;
 }
 
-/* =================================================================================================== */
+/* HOME =================== */
 .intro {
     width: 55%;
     min-width: 280px;
@@ -158,7 +177,7 @@ header {
     box-shadow: 0 0 5px 3px #e49090;
 }
 
-/* =================================================================================================== */
+/* FOOTER =================== */
 footer {
     position: fixed;
     bottom: 0;
