@@ -11,9 +11,8 @@
 </head>
 
 <body>
-    <div class="bg-mesh"></div>
     <header>
-        <div class="container-top">
+        <div class="topper-section">
             <div class="logo">
                 <h3>ruthhhs</h3>
             </div>
@@ -73,7 +72,7 @@
             </div>
         </section>
 
-        <section class="container" id="contact">
+        <section class="container contact-section" id="contact">
             <div class="contact">
                 <h2>Contact Me</h2>
                 <p>Feel free to reach me via email or LinkedIn!</p>
@@ -84,28 +83,6 @@
     <footer>
         <p>Made with love &hearts; by Ruth</p>
     </footer>
-
-    <script>
-    window.addEventListener("scroll", () => {
-        const homeHeight = document.querySelector("#home").offsetHeight;
-        const scrollY = window.scrollY;
-        const mesh = document.querySelector(".bg-mesh");
-
-        // mulai muncul di akhir home section
-        const startFade = homeHeight * 0.5; // mulai setengah jalan
-        const endFade = homeHeight * 1.2;   // selesai fade pas agak lewat section home
-
-        let opacity = 0;
-
-        if (scrollY > startFade) {
-        const progress = Math.min((scrollY - startFade) / (endFade - startFade), 1);
-        // easing halus
-        opacity = progress * progress * (3 - 2 * progress);
-        }
-
-        mesh.style.opacity = opacity;
-    });
-    </script>
 
 </body>
 </html>
