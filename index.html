@@ -26,9 +26,9 @@
             </nav>
             <div class="socials">
                 <ul>
-                    <li><a href="mailto:ruth@example.com"><img src="assets/mail-inbox-app-1.png" alt="Email" /></a></li>
-                    <li><a href="https://www.linkedin.com/in/ruth-septriana/" target="_blank"><img src="assets/linkedin-1.png" alt="LinkedIn" /></a></li>
-                    <li><a href="https://github.com/ruthhhs" target="_blank"><img src="assets/github-1.png" alt="GitHub" /></a></li>
+                    <li><a href="mailto:ruth@example.com"><img src="assets/email.png" alt="Email" /></a></li>
+                    <li><a href="https://www.linkedin.com/in/ruth-septriana/" target="_blank"><img src="assets/linkedin.png" alt="LinkedIn" /></a></li>
+                    <li><a href="https://github.com/ruthhhs" target="_blank"><img src="assets/github.png" alt="GitHub" /></a></li>
                 </ul>
             </div>
         </div>
@@ -37,16 +37,21 @@
     <main>
         <section class="container home-section" id="home">
             <div class="intro">
-                <p>Greetings! You may call me</p>
+                <h3>Greetings! You may call me</h3>
                 <h1>ruthhhs</h1>
-                <p>or just "ruth" in short.</p>
-                <p>I.. just exist! :D</p>
-                <div class="nav-body">
-                    <ul>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
+                <p><strong>Ruth Septriana Sipangkar</strong> as it's full,</p>
+                <p>or just "ruth" in short ;D</p>
+                <div class="btn-container">
+                    <button
+                        class="btn btn1"
+                        onclick="window.open('assets/resume.pdf', '_blank')"
+                    > My Resume
+                    </button>
+                    <button
+                        class="btn btn2"
+                        onclick="location.href='#contact'"
+                    > Contact Me
+                    </button>
                 </div>
             </div>
             <div class="photo">
@@ -54,22 +59,77 @@
             </div>
         </section>
 
-        <section class="container" id="skills">
-            <div class="skills">
-                <h2>Skills</h2>
-                <ul>
-                    <li>Web Development (HTML, CSS, JavaScript)</li>
-                    <li>Digital Illustration</li>
-                    <li>Graphic Design</li>
-                    <li>UI/UX Basics</li>
-                </ul>
+        <section class="container skills-section" id="skills">
+            <div class="skills-content">
+                <p class="section-title1">Explore my</p>
+                <h2 class="section-title2">Skills</h2>
+                <div class="skills">
+                    <p>Coming soon!</p>
+                </div>
+                <p class="desc">I enjoy learning by building real projects where logic meets creativity!</p>
             </div>
         </section>
 
-        <section class="container" id="projects">
-            <div class="projects">
-                <h2>Projects</h2>
-                <p>Coming soon!</p>
+        <section class="container projects-section" id="projects">
+            <div class="projects-content">
+                <p class="section-title1">Browse my</p>
+                <h2 class="section-title2">Projects</h2>
+                <div class="projects-container">
+                    <div class="card">
+                        <img src="assets/project-1.png" alt="Project 1" />
+                        <h2>Lunelle</h2>
+                        <h3>UI/UX Design - Figma</h3>
+                        <p>Lunelle is a period tracker mobile app that can suggest daily activities and meal based on the user's menstrual cycle.</p>
+                        <div class="btn-container">
+                            <button
+                                class="btn btn1"
+                                onclick="window.open('https://www.figma.com/proto/NAvM9PfqWA9Ti50C5ebHs4/Lunelle?node-id=146-3855&p=f&t=mAURaPGyglVrOOm3-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=142%3A3400', '_blank')"
+                            > See here
+                            </button>
+                            <button
+                                class="btn btn2"
+                                onclick="window.open('https://github.com/ruthhhs', '_blank')"
+                            > Github
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/project-2.png" alt="Project 2" />
+                        <h2>Theatre Of Death</h2>
+                        <h3>UI/UX Design - Game Design - Figma - ibisPaint X</h3>
+                        <p>Theatre Of Death (ToD) is a narrative-driven detective game where you play as Detective Adam.</p>
+                        <div class="btn-container">
+                            <button
+                                class="btn btn1"
+                                onclick="window.open('https://ruthhhs.itch.io/theatre-of-death', '_blank')"
+                            > See here
+                            </button>
+                            <button
+                                class="btn btn2"
+                                onclick="window.open('https://github.com/ruthhhs', '_blank')"
+                            > Github
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/project-3.png" alt="Project 3" />
+                        <h2>Rotary Potion</h2>
+                        <h3>Game Artist - ibisPaint X</h3>
+                        <p>Rotary Potion is a puzzle-platformer game where you play as Hana, a young witch, making potions by rotating crystal balls.</p>
+                        <div class="btn-container">
+                            <button
+                                class="btn btn1"
+                                onclick="window.open('https://filbertryf.itch.io/rotary-potion', '_blank')"
+                            > See here
+                            </button>
+                            <button
+                                class="btn btn2"
+                                onclick="window.open('https://github.com/ruthhhs', '_blank')"
+                            > Github
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -84,6 +144,8 @@
     <footer>
         <p>Made with love &hearts; by Ruth</p>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
