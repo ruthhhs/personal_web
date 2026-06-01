@@ -145,12 +145,13 @@ header {
     height: 100vh;
     display: flex;
     align-items: center;
-    gap: 200px;
-    background: linear-gradient(
-        180deg,
-        #F9A4A175 0%, /* primary with opacity */
-        var(--background) 50%
-    );
+    padding-left: 15%;
+
+    background-image: url(assets/home-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-attachment: fixed; */
+    background-size: cover;
 }
 
 .home-section .intro h1 {
@@ -174,13 +175,7 @@ header {
     color: var(--text);
 }
 
-.home-section .photo img {
-    width: 320px;
-    height: 320px;
-    object-fit: cover;
-}
-
-/* CONTENT =================== */
+/* CONTENT AND TEXT =================== */
 .container {
     margin: auto;
     padding: 90px 15%;
@@ -200,6 +195,12 @@ header {
     font-size: 1 rem;
     color: var(--primary);
     text-align: center;
+}
+
+.desc {
+    color: var(--secondary-dark);
+    text-align: center;
+    margin-top: 60px;
 }
 
 /* BUTTONS =================== */
@@ -251,12 +252,6 @@ header {
     padding: 70px 25rem;
     border-radius: 50px;
     margin-top: 50px;
-}
-
-.skills-section .desc {
-    color: var(--secondary-dark);
-    text-align: center;
-    margin-top: 120px;
 }
 
 /* PROJECTS =================== */
@@ -339,7 +334,7 @@ header {
 
 /* CONTACT =================== */
 .contact-section {
-    background-color: var(--secondary-light);
+    background-color: var(--secondary-dark);
     height: 40vh;
     padding: 50px 10%;
     justify-content: left;
