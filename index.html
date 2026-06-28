@@ -17,15 +17,23 @@
             <div class="logo">
                 <h3>ruthhhs</h3>
             </div>
-            <nav class="nav-head">
+
+            <nav class="nav-head" id="navHead">
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <!-- <li><a href="#skills">Skills</a></li> -->
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <!-- <li><a href="#skills" class="nav-link">Skills</a></li> -->
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+
+                <ul class="socials-mobile">
+                    <li><a href="mailto:ruth@example.com"><img src="assets/email.png" alt="Email" /></a></li>
+                    <li><a href="https://www.linkedin.com/in/ruth-septriana/" target="_blank"><img src="assets/linkedin.png" alt="LinkedIn" /></a></li>
+                    <li><a href="https://github.com/ruthhhs" target="_blank"><img src="assets/github.png" alt="GitHub" /></a></li>
                 </ul>
             </nav>
+
             <div class="socials">
                 <ul>
                     <li><a href="mailto:ruth@example.com"><img src="assets/email.png" alt="Email" /></a></li>
@@ -33,9 +41,17 @@
                     <li><a href="https://github.com/ruthhhs" target="_blank"><img src="assets/github.png" alt="GitHub" /></a></li>
                 </ul>
             </div>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navHead">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
-    
+
+    <div class="nav-overlay" id="navOverlay"></div>
+
     <main>
         <section class="home-section" id="home">
             <div class="intro">
@@ -60,12 +76,12 @@
 
         <section class="container about-section" id="about">
             <div class="about-content">
-                <p class="section-title1">Get to know</p>
-                <h2 class="section-title2">About Me</h2>
+                <p class="section-title1 reveal">Get to know</p>
+                <h2 class="section-title2 reveal">About Me</h2>
                 <div class="about-bento">
-                    <div class="about-profile-card">
+                    <div class="about-profile-card reveal">
                         <div class="about-avatar">
-                            <img src="assets/profile.jpg" alt="Profile">
+                            <img src="assets/profile.jpg" alt="Profile" />
                         </div>
                         <div class="about-profile-info">
                             <h3>Ruth Septriana Sipangkar</h3>
@@ -77,9 +93,9 @@
                     </div>
 
                     <div class="about-details-card">
-                        <div class="about-desc">
+                        <div class="about-desc reveal">
                             <p>
-                            Hi! I'm <strong>Ruth</strong>, 
+                            Hi! I'm <strong>Ruth</strong>,
                             </p>
                             <p>
                             an Informatics student who enjoys combining technology with creativity to build meaningful digital experiences.
@@ -89,12 +105,12 @@
                             As a <strong>Designer</strong>, I design intuitive UI/UX, create graphic designs, and craft memorable logo identities.
                             As an <strong>Illustrator</strong>, I specialize in character sheets, splash art, environment backgrounds, VTuber models, and game assets.
                             </p>
-                            <P>
+                            <p>
                             I'm always excited to learn new technologies, take on creative challenges, and transform ideas into interactive digital products.
                             </p>
                         </div>
-                        
-                        <div class="about-tools">
+
+                        <div class="about-tools reveal">
                             <img
                             src="https://skillicons.dev/icons?i=python,c,cpp,java,js,html,css,mysql,unity,godot,opencv,figma&theme=light&perline=6"
                             alt="Tech Stack"
@@ -118,10 +134,10 @@
 
         <section class="container projects-section" id="projects">
             <div class="projects-content">
-                <p class="section-title1">Browse my</p>
-                <h2 class="section-title2">Projects</h2>
+                <p class="section-title1 reveal">Browse my</p>
+                <h2 class="section-title2 reveal">Projects</h2>
                 <div class="projects-container">
-                    <div class="card">
+                    <div class="card reveal">
                         <img src="assets/project-1.png" alt="Project 1" />
                         <h2>Lunelle</h2>
                         <h3>UI/UX Design - Figma</h3>
@@ -139,7 +155,7 @@
                             </button>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card reveal">
                         <img src="assets/project-2.png" alt="Project 2" />
                         <h2>Theatre Of Death</h2>
                         <h3>UI/UX Design - Game Design - Figma - ibisPaint X</h3>
@@ -157,7 +173,7 @@
                             </button>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card reveal">
                         <img src="assets/project-3.png" alt="Project 3" />
                         <h2>Rotary Potion</h2>
                         <h3>Game Artist - ibisPaint X</h3>
@@ -180,9 +196,38 @@
         </section>
 
         <section class="container contact-section" id="contact">
-            <div class="contact">
-                <h2>Contact Me</h2>
-                <p>Feel free to reach me via email or LinkedIn!</p>
+            <div class="contact reveal">
+                <p class="section-title1">Let's talk</p>
+                <h2 class="section-title2">Contact Me</h2>
+                <p class="contact-desc">Got a project in mind, or just want to say hi? I'd love to hear from you!</p>
+
+                <div class="contact-cards">
+                    <a class="contact-card" href="mailto:ruth@example.com">
+                        <img src="assets/email.png" alt="" />
+                        <div class="contact-card-text">
+                            <h3>Email</h3>
+                            <p>ruth@example.com</p>
+                        </div>
+                    </a>
+                    <a class="contact-card" href="https://www.linkedin.com/in/ruth-septriana/" target="_blank">
+                        <img src="assets/linkedin.png" alt="" />
+                        <div class="contact-card-text">
+                            <h3>LinkedIn</h3>
+                            <p>ruth-septriana</p>
+                        </div>
+                    </a>
+                    <a class="contact-card" href="https://github.com/ruthhhs" target="_blank">
+                        <img src="assets/github.png" alt="" />
+                        <div class="contact-card-text">
+                            <h3>GitHub</h3>
+                            <p>ruthhhs</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="btn-container contact-btn-container">
+                    <button class="btn btn1" id="copyEmailBtn" data-email="ruth@example.com">Copy Email</button>
+                </div>
             </div>
         </section>
     </main>
@@ -190,6 +235,9 @@
     <footer>
         <p>Made with love &hearts; by Ruth</p>
     </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">&uarr;</button>
+    <div class="toast" id="toast">Email copied to clipboard!</div>
 
     <script src="script.js"></script>
 
