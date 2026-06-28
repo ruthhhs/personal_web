@@ -652,7 +652,7 @@ header {
     pointer-events: auto;
 }
 
-.back-to-top:hover {
+.back-to-top:active {
     background-color: var(--secondary-dark);
 }
 
