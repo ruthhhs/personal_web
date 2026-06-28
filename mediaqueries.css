@@ -4,6 +4,10 @@
   }
 }
 
+.back-to-top:active {
+  background-color: var(--secondary-dark);
+}
+
 /* TABLET ===================== */
 @media (max-width: 1024px) {
     .container {
@@ -209,9 +213,4 @@
     .contact-card-text {
         text-align: center;
     }
-}
-
-/* ===================== */
-.back-to-top:active {
-  background-color: var(--secondary-dark);
 }
