@@ -38,17 +38,6 @@ p {
     font-weight: 600;
 }
 
-/* RESPONSIVE =================== */
-@media (max-width: 650px) {
-    .nav-head {
-        display: none;
-    }
-
-    .topper-section {
-        padding: 0 20px;
-    }
-}
-
 /* HEADER =================== */
 header {
     position: fixed;
@@ -240,6 +229,90 @@ header {
     background-color: var(--secondary-dark);
     color: var(--background);
     border: none;
+}
+
+/* ABOUT =================== */
+
+.about-bento{
+    margin-top:30px;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 16px;
+    align-items: stretch;
+}
+
+/* ---------- Left Card ---------- */
+.about-profile-card{
+    width: 100%;
+    max-width: 300px;
+    background: var(--primary-superlight);
+    border-radius: 20px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 12px;
+}
+
+.about-avatar{
+    width: 200px;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 3px solid #fff;
+    margin-bottom: 6px;
+}
+
+.about-avatar img{
+    display:block;
+    width:100%;
+    height:auto;
+}
+
+.about-profile-info h3{
+    margin-bottom: 8px;
+    color: var(--primary-dark);
+}
+
+.about-profile-info p{
+    margin: 4px 0;
+    line-height: 1.4;
+}
+
+/* ---------- Right Card ---------- */
+.about-details-card{
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+}
+
+.about-desc{
+    background: var(--primary-superlight);
+    border-radius: 20px;
+    padding: 18px 20px;
+}
+
+.about-desc p{
+    font-size: 0.95rem;
+    margin: 8px 0;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.about-tools{
+    background:var(--primary-superlight);
+    border-radius:20px;
+    padding:24px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.about-tools img{
+    width:100%;
+    max-width:350px;
+    height:auto;
 }
 
 /* SKILLS =================== */
