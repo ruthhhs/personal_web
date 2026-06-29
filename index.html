@@ -8,39 +8,24 @@
     <link rel="stylesheet" href="mediaqueries.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Huninn&family=Quicksand:wght@300..700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Imperial+Script&family=Quicksand:wght@300..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=TASA+Explorer:wght@400..800&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <div class="topper-section">
             <div class="logo">
-                <h3>ruthhhs</h3>
+                <h3>Ruthhhs</h3>
             </div>
 
             <nav class="nav-head" id="navHead">
                 <ul>
                     <li><a href="#home" class="nav-link">Home</a></li>
                     <li><a href="#about" class="nav-link">About</a></li>
-                    <!-- <li><a href="#skills" class="nav-link">Skills</a></li> -->
                     <li><a href="#projects" class="nav-link">Projects</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
-
-                <ul class="socials-mobile">
-                    <li><a href="mailto:ruth@example.com"><img src="assets/email.png" alt="Email" /></a></li>
-                    <li><a href="https://www.linkedin.com/in/ruth-septriana/" target="_blank"><img src="assets/linkedin.png" alt="LinkedIn" /></a></li>
-                    <li><a href="https://github.com/ruthhhs" target="_blank"><img src="assets/github.png" alt="GitHub" /></a></li>
-                </ul>
             </nav>
-
-            <div class="socials">
-                <ul>
-                    <li><a href="mailto:ruth@example.com"><img src="assets/email.png" alt="Email" /></a></li>
-                    <li><a href="https://www.linkedin.com/in/ruth-septriana/" target="_blank"><img src="assets/linkedin.png" alt="LinkedIn" /></a></li>
-                    <li><a href="https://github.com/ruthhhs" target="_blank"><img src="assets/github.png" alt="GitHub" /></a></li>
-                </ul>
-            </div>
 
             <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navHead">
                 <span></span>
@@ -55,21 +40,33 @@
     <main>
         <section class="home-section" id="home">
             <div class="intro">
-                <h3>Greetings! You may call me</h3>
-                <h1>ruthhhs</h1>
-                <p><strong>Ruth Septriana Sipangkar</strong> as it's full,</p>
-                <p>or just "ruth" in short ;D</p>
+                <h3>Hello, I'm</h3>
+                <h1 class="name">
+                    <span class="cursive">R</span>uthhhs,
+                </h1>
+                <p>an Informatics student who is also an artist!</p>
+
                 <div class="btn-container">
                     <button
-                        class="btn btn1"
+                        class="btn"
                         onclick="window.open('assets/resume.pdf', '_blank')"
                     > My Resume
                     </button>
-                    <button
-                        class="btn btn2"
-                        onclick="location.href='#contact'"
-                    > Contact Me
-                    </button>
+
+                    <div class="btn-contact-wrapper">
+                        <button
+                            class="btn btn-contact"
+                            onclick="location.href='#contact'"
+                        >
+                            <span class="btn-text">Contact Me</span>
+
+                            <span class="contact-icons">
+                                <img class="contact-icon" src="assets/email.png" alt="Email">
+                                <img class="contact-icon" src="assets/linkedin.png" alt="LinkedIn">
+                                <img class="contact-icon" src="assets/github.png" alt="GitHub">
+                            </span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -79,6 +76,7 @@
                 <p class="section-title1 reveal">Get to know</p>
                 <h2 class="section-title2 reveal">About Me</h2>
                 <div class="about-bento">
+
                     <div class="about-profile-card reveal">
                         <div class="about-avatar">
                             <img src="assets/profile.jpg" alt="Profile" />
@@ -121,17 +119,6 @@
             </div>
         </section>
 
-        <!-- <section class="container skills-section" id="skills">
-            <div class="skills-content">
-                <p class="section-title1">Explore my</p>
-                <h2 class="section-title2">Skills</h2>
-                <div class="skills">
-                    <p>Coming soon!</p>
-                </div>
-                <p class="desc">I enjoy learning by building real projects where logic meets creativity!</p>
-            </div>
-        </section> -->
-
         <section class="container projects-section" id="projects">
             <div class="projects-content">
                 <p class="section-title1 reveal">Browse my</p>
@@ -144,12 +131,12 @@
                         <p>Lunelle is a period tracker mobile app that can suggest daily activities and meal based on the user's menstrual cycle.</p>
                         <div class="btn-container">
                             <button
-                                class="btn btn1"
+                                class="btn"
                                 onclick="window.open('https://www.figma.com/proto/NAvM9PfqWA9Ti50C5ebHs4/Lunelle?node-id=146-3855&p=f&t=mAURaPGyglVrOOm3-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=142%3A3400', '_blank')"
                             > See here
                             </button>
                             <button
-                                class="btn btn2 inactive"
+                                class="btn inactive"
                                 onclick="window.open('https://github.com/ruthhhs', '_blank')"
                             > Github
                             </button>
@@ -162,12 +149,12 @@
                         <p>Theatre Of Death (ToD) is a narrative-driven detective game where you play as Detective Adam.</p>
                         <div class="btn-container">
                             <button
-                                class="btn btn1"
+                                class="btn"
                                 onclick="window.open('https://ruthhhs.itch.io/theatre-of-death', '_blank')"
                             > See here
                             </button>
                             <button
-                                class="btn btn2"
+                                class="btn"
                                 onclick="window.open('https://github.com/Udong0/GAMEVIDIA', '_blank')"
                             > Github
                             </button>
@@ -180,12 +167,12 @@
                         <p>Rotary Potion is a puzzle-platformer game where you play as Hana, a young witch, making potions by rotating crystal balls.</p>
                         <div class="btn-container">
                             <button
-                                class="btn btn1"
+                                class="btn"
                                 onclick="window.open('https://filbertryf.itch.io/rotary-potion', '_blank')"
                             > See here
                             </button>
                             <button
-                                class="btn btn2 inactive"
+                                class="btn inactive"
                                 onclick="window.open('https://github.com/ruthhhs', '_blank')"
                             > Github
                             </button>
@@ -202,11 +189,11 @@
                 <p class="contact-desc">Got a project in mind, or just want to say hi? I'd love to hear from you!</p>
 
                 <div class="contact-cards">
-                    <a class="contact-card" href="mailto:ruth@example.com">
+                    <a class="contact-card" href="mailto:septrianaruth@gmail.com">
                         <img src="assets/email.png" alt="" />
                         <div class="contact-card-text">
                             <h3>Email</h3>
-                            <p>ruth@example.com</p>
+                            <p>septrianaruth@gmail.com</p>
                         </div>
                     </a>
                     <a class="contact-card" href="https://www.linkedin.com/in/ruth-septriana/" target="_blank">
@@ -226,7 +213,7 @@
                 </div>
 
                 <div class="btn-container contact-btn-container">
-                    <button class="btn btn1" id="copyEmailBtn" data-email="ruth@example.com">Copy Email</button>
+                    <button class="btn" id="copyEmailBtn" data-email="ruth@example.com">Copy Email</button>
                 </div>
             </div>
         </section>
