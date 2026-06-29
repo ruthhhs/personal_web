@@ -298,13 +298,14 @@ header {
     color: var(--text);
     font-weight: 600;
     font-size: 1rem;
+    width: 160px;
     padding: 0.75rem 1.25rem;
     min-width: 8rem;
     border-radius: 2rem;
-    border: 3px solid transparent;
+    border: 1.5px solid transparent;
     outline: none;
     white-space: nowrap;
-    transition: all 300ms ease,
+    transition: all 300ms ease;
 }
 .btn:hover {
     cursor: pointer;
@@ -321,11 +322,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--background);
+    background: var(--secondary-superlight);
     border-color: var(--secondary-light);
     color: var(--text);
 
-    width: 190px;
+    width: 180px;
     transition:
         width .35s ease,
         background-color .3s,
@@ -337,6 +338,7 @@ header {
 .btn-text{
     font-family: "Sour Gummy", sans-serif;
     transition: all .35s ease;
+    color: var(--text);
 }
 .btn-contact:hover .btn-text{
     transform: translateY(35px);
@@ -344,12 +346,10 @@ header {
 }
 .contact-icons{
     position: absolute;
-    /* right: 20px; */
     display: flex;
     align-items: center;
     gap: 12px;
     opacity: 0;
-    /* transform: translateX(20px); */
     transition: opacity .3s ease, transform .3s ease;
     pointer-events: none;
 }
@@ -371,17 +371,15 @@ header {
 }
 
 .projects-container .btn-container {
-    /* margin: 10px 0px 0px; */
     justify-content: center;
-    gap: 1rem;
 }
 .projects-container .btn {
     padding: 0.5rem;
     min-width: 8rem;
+    width: 100px;
     border-radius: 1rem;
     transition: all ease 300ms;
     background-color: var(--secondary-superlight);
-    border: 1.5px solid transparent;
     border-color: var(--secondary-light);
 }
 .projects-container .btn:hover {
